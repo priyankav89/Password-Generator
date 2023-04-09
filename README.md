@@ -1,13 +1,13 @@
 # JavaScript: Password Generator
 
-##Description
+##DESCRIPTION
 This password generator will randomly generate a password that meets certain criteria so that it create a strong password that provides greater security .
 
-##Installation
+##INSTALLATION
 
 N/A
 
-##Usage
+##USAGE
 
 1.WHEN you click the button to generate a password, THEN  you are presented with a series of prompts for password criteria
 
@@ -30,10 +30,10 @@ The following image shows the web application's appearance and functionality:
 ![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
 
 
-##Credits
+##CREDITS
 
 N/A
 
-##License
+##LICENSE
 
 MIA
