@@ -17,13 +17,13 @@ function generatePassword() {
 var includeLowercase = confirm("Do you want to include lowercase letters in password?");
 var includeUppercase = confirm("Do you want to include uppercase letters in password?");
 var includeSpecialCharacters = confirm("Do you want to include special characters in  password?");
-var includeNumbers = confirm("Do you want to iInclude Numbers in password?");
+var includeNumbers = confirm("Do you want to include Numbers in password?");
  
 // validate type of characters 
 if(includeLowercase){
   alert("Your password will include Lowercase letters");
 } else {
-  alert("Your password will NOT have lowercase letters");
+  alert("Your password will NOT include lowercase letters");
 };
 if(includeUppercase){
   alert("your password will include Uppercase letters");
@@ -38,7 +38,7 @@ if(includeSpecialCharacters) {
 };
 
 if (includeNumbers){
-  alert("Your password will iclude numbers");
+  alert("Your password will include numbers");
 }else {
   alert("Your password will NOT include numbers");
 };
@@ -58,7 +58,6 @@ const uppercase= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let passwordLowercase=[];
 const lowercase= "abcdefghijklmnopqrstuvwxyz";
 let  passChar = "";
-//return generated password
 
 if (includeSpecialCharacters) {
   passwordCharacters=passwordCharacters.concat(specialCharacters.split(""));
@@ -67,7 +66,7 @@ if (includeSpecialCharacters) {
 }
 
 if (includeNumbers){
-  passwordNumbers=passwordNumbers.concat(numbers.split(""));
+  passwordNumbers=passwordNumbers.concat(numbers);
   passChar+=passwordNumbers;
 
 }
@@ -82,7 +81,7 @@ if (includeLowercase){
   passwordLowercase=passwordLowercase.concat(lowercase );
   passChar+=passwordLowercase;
 }
-//generate random password 
+//return generated password 
 let results = "";
  for (i=0;i<passwordLength;i++) {
   
@@ -92,8 +91,6 @@ let results = "";
 
 };
 
-
-//return generated password
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
